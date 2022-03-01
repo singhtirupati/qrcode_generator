@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >QR Code Generator</title>
+    <link rel="icon" href="images/qr_code.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 align="center">QR Code Generator</h2>
+        <center>
+            <img src="" id="img">
+        </center>
+
+        <select id="choice">
+            <option value="100">100 x 100 px</option>
+            <option value="150">150 x 150 px</option>
+            <option value="200">200 x 200 px</option>
+            <option value="250" selected>250 x 250 px</option>
+            <option value="300">300 x 300 px</option>
+        </select>
+        <br><br>
+        <textarea placeholder="Enter your text to generate QR" id="qrtext" cols="30" rows="5"></textarea>
+        <br><br>
+        <input type="submit" value="Generate" onclick="genQR()">
+        <p><strong>Developed By Tirupati Singh</strong></p>
+    </div>
+</body>
+</html>
